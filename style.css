@@ -1,0 +1,175 @@
+html{height:100%;background:radial-gradient(circle,#F4E8F7,#D59BE0);background:-moz-radial-gradient(circle,#F4E8F7,#D59BE0);background:-o-radial-gradient(circle,#F4E8F7,#D59BE0);background:-webkit-radial-gradient(circle,#F4E8F7,#D59BE0);}
+
+#contain{
+    height:500px;
+    width:650px;
+    background: linear-gradient(#BBECFE ,#76D4F8 ,#49CCFF );
+    background:-moz-linear-gradient(#BBECFE ,#76D4F8 ,#49CCFF );
+    background:-o-linear-gradient(#BBECFE ,#76D4F8 ,#49CCFF );
+    background:-webkit-radial-gradient(#BBECFE ,#76D4F8 ,#49CCFF );
+    padding:22px;
+    margin:100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px #0080.2FF;
+    -webkit-box-shadow: 0px 5px 0px 0px #0080.2FF;
+    -moz-box-shadow: 0px 5px 0px 0px #0080.2FF;
+    position:relative;
+}
+
+#score{
+    background: rgb(1, 197, 89);
+    color:rgb(0.23, 73, 45);
+    position:absolute;
+    left:580px;
+    font-size: 18px;
+    padding:16px;
+    box-shadow: 0px 5px 0px 0px rgb(0.23, 73, 45);
+    -webkit-box-shadow: 0px 5px 0px 0px rgb(0.23, 73, 45);
+    -moz-box-shadow: 0px 5px 0px 0px rgb(0.23, 73, 45);
+}
+
+#correct{
+    padding:16px;
+    position:absolute;
+    left:300px;
+    background: rgb(93, 207, 0);
+    font-size: 18px;
+    color:white;
+    display:none;
+
+}
+#try{
+    padding:16px;
+    position:absolute;
+    left:300px;
+    background: #940011;
+    font-size: 18px;
+    color:white;
+    display:none;
+
+}
+#ques{
+    height:160px;
+    width:500px;
+    
+    margin:80px auto 13px auto;
+    background: hotpink;
+    box-shadow: 0px 5px 0px 0px rgb(151, 0, 93);
+    -webkit-box-shadow: 0px 5px 0px 0px rgb(151, 0, 93);
+    -moz-box-shadow: 0px 5px 0px 0px rgb(151, 0, 93);
+    font-family: cursive,sans-serif;
+    font-size: 100px;
+    color:black;
+    line-height: 1.4;
+    text-align: center;
+}
+#boxes{
+    width:500px;
+    height:40px;
+    text-align: center;
+    font-size: 22px;
+    margin:0px auto 10px auto;
+    background: #D84DFD;
+    color:#450157;
+    line-height: 1.6;
+    box-shadow: 0px 5px 0px 0px #450157;
+    -webkit-box-shadow: 0px 5px 0px 0px #450157;
+    -moz-box-shadow: 0px 5px 0px 0px #450157;
+}
+#choices{
+    height: 100px;
+    width:500px;
+    margin:5px auto 10px auto;
+
+}
+.boxed{
+    width:100px;
+    height:100px;
+    background: whitesmoke;
+    float:left;
+    color:grey;
+    font-weight: bold;
+    box-shadow:0px 5px 0px 0px grey;
+    -moz-box-shadow:0px 5px 0px 0px grey;
+    -webkit-box-shadow:0px 5px 0px 0px grey;
+    margin-right: 28px;
+    border-radius: 3px;
+    cursor:pointer;
+    line-height: 90px;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    
+}
+.boxed:hover,#gamest:hover{
+    background: rgb(255, 105, 180);
+    box-shadow:0px 5px 0px 0px rgb(151, 0, 93);
+    -webkit-box-shadow:0px 5px 0px 0px rgb(151, 0, 93); 
+    -moz-box-shadow:0px 5px 0px 0px rgb(151, 0, 93);
+    color:white;
+}
+.boxed:active,#gamest:active{
+    box-shadow:0px 0px 0px 0px grey;
+    -webkit-box-shadow:0px 0px 0px 0px grey;
+    -moz-box-shadow:0px 0px 0px 0px grey;
+top:5px;}
+#box4{margin-right: 0;}
+#gamest{
+    width:100px;
+    height:30px;
+    padding :4px;
+    line-height: 26.4px;
+    background: rgb(238, 167, 167);
+    color:black;
+    font-weight: bold;
+    box-shadow:0px 5px 0px 0px rgb(95, 25, 25);
+    -moz-box-shadow:0px 5px 0px 0px rgb(95, 25, 25);
+    -webkit-box-shadow:0px 5px 0px 0px rgb(95, 25, 25);
+     margin:50px auto 0px auto;
+    border-radius: 3px;
+    cursor:pointer;
+     text-align: center;
+    position: relative;
+    transition: all 0.2s;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+#timed{ position: absolute;
+    top:503px;
+    left:483px;
+    height:30px;
+    text-align: center;
+    line-height:34px ;
+    border-radius: 3px;
+ display:none ;
+    width:185px;
+    margin:0px auto 20px auto;
+    background: rgb(78, 247, 0);
+    box-shadow:0px 4px 0px 0px rgb(63, 90, 0);
+    -moz-box-shadow:0px 4px 0px 0px rgb(63, 90, 0);
+    -webkit-box-shadow:0px 4px 0px 0px rgb(63, 90, 0);
+
+
+}
+#gover{height:230px;
+width:550px;
+background: linear-gradient(rgb(252, 122, 47),orange,rgb(255, 129, 56));
+background: -o-linear-gradient(rgb(252, 122, 47),orange,rgb(255, 129, 56));
+background: -moz-linear-gradient(rgb(252, 122, 47),orange,rgb(255, 129, 56));
+background: -webkit-linear-gradient(rgb(252, 122, 47),orange,rgb(255, 129, 56));
+text-transform: uppercase;
+text-align: center;
+font-size: 2.5em;
+z-index: 2;
+display:none;
+color:white;
+position:absolute;
+top:130px;
+left:72px;
+}
